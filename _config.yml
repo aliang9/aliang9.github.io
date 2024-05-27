@@ -22,13 +22,13 @@ repository               : "aliang9/aliang9.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Arthur Liang"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Cambridge, MA & Brooklyn, NY"
+  employer         : "MIT"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "artliang at mit dot edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
