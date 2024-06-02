@@ -11,7 +11,7 @@ This website is currently under construction so please excuse its appearance!
 
 I'm Arthur and I like learning about the world to build things that improve it while also having a blast doing so. I'm interested in medicine, particularly using machine learning methods to advance therapeutics and procedures for combating neurological diseases.
 
-I love cafe hopping, reading/writing, consuming Korean media, and working out. Right now, I want to learn more about VC, geometric deep learning, foreign languages, and how to get myself to wake up in the morning.
+I love cafe hopping, reading, consuming Korean media, and working out. I'm also a beginner blogger currently still trying to find my voice and content fit. Right now, I want to learn more about VC, geometric deep learning, foreign languages, and how to get myself to wake up in the morning.
 
 Say hi at artliang [at] mit [dot] edu, I'd love to chat!
 
