@@ -1,20 +1,30 @@
 ---
 permalink: /
-title: "Hello :)"
+title: "hi :)"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am an undergrad at MIT studying Computer Science, Neuroscience, and Math.
+This website is currently under construction so please excuse its appearance!
 
-Say hi at artliang [at] mit [dot] edu!
+I'm Arthur and I like learning about the world to build things that improve it while also having a blast doing so. I'm interested in medicine, particularly using machine learning methods to advance therapeutics and procedures for combating neurological diseases.
 
-This website is currently under construction!
+I love cafe hopping, reading/writing, consuming Korean media, and working out. Right now, I want to learn more about VC, geometric deep learning, foreign languages, and how to get myself to wake up in the morning.
+
+Say hi at artliang [at] mit [dot] edu, I'd love to chat!
 
 Currently, I
 ======
+* am an undergrad at MIT studying [Computation and Cognition](https://mitadmissions.org/blogs/entry/my-major-course-6-9/) and [Mathematics](https://mitadmissions.org/blogs/entry/thoughts-on-mathmit/).
+* work as an undergraduate researcher with [Tommi S. Jaakkola's group @ CSAIL](https://people.csail.mit.edu/tommi/), investigating controlled protein generation.
+* volunteer as an Emergency Medical Technician as part of [MIT EMS](https://ems.mit.edu/).
+* train and compete with [MIT Sport Taekwondo](https://web.mit.edu/taekwondo/), also serve(d) as Tournament Coordinator and Social Chair.
+* serve as the Operations Lead for [MIT Hacking Medicine](https://www.hackingmedicine.mit.edu/), helping to organize healthcare hackathons like our annual flagship Grand Hack.
 
 Previously, I
 ======
+* interned as a machine learning researcher with the AI team at [Boeing Korea (BKETC)](https://www.boeing.co.kr/boeing-korea/about-boeing-korea) where I built an RL agent for tail swapping and implemented large vision models for expediting inspection procedures.
+* worked as an undergraduate researcher with the [MetaConscious Group @ MIT Brain and Cognitive Sciences](https://www.metaconscious.org/) on building more biologically-inspired neural network architectures with realistic visual inputs for experimental neuroscience tasks.
+* got my start with research in high school, where I got my feet wet with experimental neuroscience and pharmacology, and winning awards at [ISEF](https://www.societyforscience.org/isef/)
