@@ -17,6 +17,9 @@ main:
     
   - title: "CV"
     url: /cv/
+
+  # - title: "CV"
+  #   url: https://aliang9.github.io/files/
     
   # - title: "Guide"
   #   url: /markdown/
