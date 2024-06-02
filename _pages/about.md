@@ -9,7 +9,7 @@ redirect_from:
 
 **This website is currently under construction so please excuse its appearance!**
 
-I'm Arthur and I like learning about the world to build things that improve it while also having a blast doing so. I'm interested in medicine, particularly using machine learning methods to advance therapeutics and procedures for combating neurological diseases.
+I'm Arthur and I love learning about the world and building things that improve it while also having fun doing so. I'm interested in medicine, particularly using machine learning methods to advance therapeutics and procedures for combating neurological diseases.
 
 I love cafe hopping, reading, consuming Korean media, and working out. I'm also a beginner blogger currently still trying to find my voice and content fit. Right now, I want to learn more about VC, geometric deep learning, foreign languages, and how to get myself to wake up in the morning.
 
@@ -27,5 +27,5 @@ Previously, I
 ======
 * interned as a machine learning researcher with the AI team at [Boeing Korea (BKETC)](https://www.boeing.co.kr/boeing-korea/about-boeing-korea) where I built an RL agent for tail swapping and implemented large vision models for expediting inspection procedures.
 * spent two winter breaks developing and delivering hands-on workshops on biology, neuroscience, and medicine exemplifying MIT's _mens et manus_ motto to high schoolers at [Korea International School](https://www.kis.or.kr/) as part of [MIT MISTI Global Teaching Labs](https://misti.mit.edu/mit-korea).
-* worked as an undergraduate researcher with the [MetaConscious Group @ MIT Brain and Cognitive Sciences](https://www.metaconscious.org/) on building more biologically-inspired neural network architectures with realistic visual inputs for experimental neuroscience tasks.
+* worked as an undergraduate researcher with the [MetaConscious Group @ MIT Brain and Cognitive Sciences](https://www.metaconscious.org/) on building more biologically-plausible neural network architectures with realistic visual inputs for experimental neuroscience tasks.
 * got my start with research in high school, where I got my feet wet with experimental neuroscience and pharmacology, and winning awards at [ISEF](https://www.societyforscience.org/isef/)
