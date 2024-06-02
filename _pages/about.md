@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-This website is currently under construction so please excuse its appearance!
+**This website is currently under construction so please excuse its appearance!**
 
 I'm Arthur and I like learning about the world to build things that improve it while also having a blast doing so. I'm interested in medicine, particularly using machine learning methods to advance therapeutics and procedures for combating neurological diseases.
 
