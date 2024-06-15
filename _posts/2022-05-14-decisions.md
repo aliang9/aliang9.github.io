@@ -6,7 +6,9 @@ tags:
   - decision-making
 ---
 
-As I'm brainstorming for my senior portrait for English class, I'm pondering the question of how I got to be the way I am today. In a way, we are our decisions. And I think it's rather safe to say that most of our decisions are made on a whim, without too much deliberation. Things like how we decide to respond to a certain joke. And therein lies the source of much the difference and similarity we can find between one individual and the next: our habits.
+As I'm brainstorming for my senior portrait for English class, I'm pondering the question of how I got to be the way I am today. 
+
+In a way, we are our decisions. And I think it's rather safe to say that most of our decisions are made on a whim, without too much deliberation. Things like how we decide to respond to a certain joke. And therein lies the source of much the difference and similarity we can find between one individual and the next: our habits.
 
 I like to think about this philosophy in terms of academics as it's certainly something that consumes much of my life as the high schooler I am right now (and have been for the past four years) while also something that distinguishes me from my peers (going both ways). I will never make the choice to give up studying for a test or cramming a project that I know can be improved to hang out with friends or play video games. And I've made this same choice over and over again these past four years so it's easy for me to continue doing so. It doesn't weigh on my conscience to obey inertia; it's a habit. And so I repeatedly get the results I want.
 
