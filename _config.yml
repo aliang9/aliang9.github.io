@@ -21,11 +21,11 @@ repository               : "aliang9/aliang9.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "IMG.3106.png"
   name             : "Arthur Liang"
   pronouns         : # example: "she/her"  
   bio              : "ml researcher interested in medicine and neuroscience"
-  location         : "cambridge, ma & brooklyn, ny"
+  location         : "Cambridge, MA & Brooklyn, NY"
   employer         : # URL
   uri              : # URL
   email            : "artliang@mit.edu" 
