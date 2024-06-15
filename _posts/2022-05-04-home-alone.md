@@ -3,7 +3,7 @@ title: 'Merits of Going Home Alone'
 date: 2022-05-04
 permalink: /posts/2022/05/home-alone/
 tags:
-  - 
+  - anecdotal
 ---
 
 Today I took the train home from school alone for the first time in maybe a month. 
