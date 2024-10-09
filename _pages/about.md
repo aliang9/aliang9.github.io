@@ -17,8 +17,8 @@ Say hi at artliang [at] mit [dot] edu, I'd love to chat!
 
 Currently, I
 ======
-* am an undergrad at MIT studying [Computation and Cognition](https://mitadmissions.org/blogs/entry/my-major-course-6-9/) and [Mathematics](https://mitadmissions.org/blogs/entry/thoughts-on-mathmit/).
-* work as an undergraduate researcher with [Tommi S. Jaakkola's group @ CSAIL](https://people.csail.mit.edu/tommi/), investigating controlled protein generation with flow matching, diffusion, and language models.
+* study [Computer Science and Neuroscience](https://mitadmissions.org/blogs/entry/my-major-course-6-9/) and [Mathematics](https://mitadmissions.org/blogs/entry/thoughts-on-mathmit/) at MIT.
+* research with [Tommi S. Jaakkola's group](https://people.csail.mit.edu/tommi/) and [Manolis Kellis's group]([https://people.csail.mit.edu/tommi/](https://compbio.mit.edu/)) @ CSAIL, investigating protein structure-language latent embeddings and controlled protein generation with flow matching, diffusion, and language models.
 * intern at [Altera](https://altera.al/), building digital human beings that care about people.
 * volunteer as an Emergency Medical Technician as part of [MIT EMS](https://ems.mit.edu/).
 * train and compete with [MIT Sport Taekwondo](https://web.mit.edu/taekwondo/), also serve(d) as Tournament Coordinator and Social Chair.
