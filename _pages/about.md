@@ -13,6 +13,8 @@ I love trying new cafes and restaurants, reading, cooking, and practicing taekwo
 
 Say hi at artliang [at] mit [dot] edu, I'm always looking for good reads and eats!
 
+- last updated september 2025
+
 These days, I
 ======
 * study [Computer Science and Neuroscience](https://mitadmissions.org/blogs/entry/my-major-course-6-9/) and [Mathematics](https://mitadmissions.org/blogs/entry/thoughts-on-mathmit/) at MIT.
