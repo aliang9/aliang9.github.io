@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Arthur Liang"
+title                    : "arthur liang"
 title_separator          : "-"
-name                     : &name "Arthur Liang"
-description              : &description "ml researcher interested in medicine and neuroscience"
+name                     : &name "arthur liang"
+description              : &description "ai researcher interested in medicine and neuroscience"
 url                      : https://aliang9.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aliang9/aliang9.github.io"
@@ -22,10 +22,10 @@ repository               : "aliang9/aliang9.github.io"
 author:
   # Biographic information
   avatar           : "IMG_3106 (3).jpg"
-  name             : "Arthur Liang"
+  name             : "arthur liang"
   pronouns         : # example: "she/her"  
-  bio              : "ml researcher interested in medicine and neuroscience"
-  location         : "Cambridge, MA & Brooklyn, NY"
+  bio              : "ai researcher interested in medicine and neuroscience"
+  location         : "cambridge, ma & brooklyn, ny"
   employer         : # URL
   uri              : # URL
   email            : "artliang@mit.edu" 
