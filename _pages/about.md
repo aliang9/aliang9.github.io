@@ -13,6 +13,8 @@ i love trying new cafes and restaurants, reading, cooking, and practicing taekwo
 
 say hi at artliang [at] mit [dot] edu, i'm always looking for good reads and eats! currently, i'm working through [dishoom's cookbook](https://www.dishoom.com/store/products/dishoom-cookery-book/)!
 
+currently reading: the vegetarian by han kang
+
 -- last updated november 2025
 
 these days, i
