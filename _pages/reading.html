@@ -1,0 +1,177 @@
+---
+layout: default
+title: "Reading"
+permalink: /reading/
+author_profile: false
+---
+
+<div class="reading-page">
+  <!-- Hero Section with Lucky Buttons -->
+  <section class="reading-hero">
+    <div class="reading-hero__content">
+      <h1 class="reading-hero__title">Arthur's Bookshelf</h1>
+      <p class="reading-hero__subtitle">Books that shaped my thinking</p>
+
+      <div class="lucky-buttons">
+        <button class="lucky-btn lucky-btn--tbr" onclick="feelingLucky('tbr')">
+          I'm Feeling Lucky
+        </button>
+        <button class="lucky-btn lucky-btn--pick" onclick="feelingLucky('favorites')">
+          From Arthur's Favorites
+        </button>
+      </div>
+    </div>
+
+    <!-- Lucky Book Reveal -->
+    <div class="lucky-reveal" id="luckyReveal">
+      <div class="lucky-reveal__book">
+        <div class="lucky-reveal__cover-wrapper">
+          <img class="lucky-reveal__cover" id="luckyBookCover" src="" alt="Book cover">
+        </div>
+        <div class="lucky-reveal__info">
+          <h3 class="lucky-reveal__title" id="luckyBookTitle"></h3>
+          <p class="lucky-reveal__author" id="luckyBookAuthor"></p>
+          <p class="lucky-reveal__review" id="luckyBookReview"></p>
+          <button class="lucky-reveal__close" onclick="closeLuckyReveal()">&#10005; Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Currently Reading -->
+  {% if site.data.books.currently_reading.size > 0 %}
+  <section class="reading-section reading-current">
+    <h2 class="reading-section__title">
+      Currently Reading
+    </h2>
+
+    <div class="current-books">
+      {% for book in site.data.books.currently_reading %}
+      <div class="current-book">
+        <div class="current-book__cover-wrapper">
+          <img class="current-book__cover book-cover"
+               data-isbn="{{ book.isbn }}"
+               src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
+               alt="{{ book.title }} cover"
+               onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22128%22 height=%22192%22><rect fill=%22%23f0ebe3%22 width=%22128%22 height=%22192%22/><text x=%2264%22 y=%2296%22 text-anchor=%22middle%22 fill=%22%235c4033%22 font-size=%2212%22>No Cover</text></svg>'">
+        </div>
+        <div class="current-book__info">
+          <h3 class="current-book__title">{{ book.title }}</h3>
+          <p class="current-book__author">{{ book.author }}</p>
+          {% if book.progress %}
+          <div class="current-book__progress">
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: {{ book.progress }}%"></div>
+            </div>
+            <span class="progress-bar__text">{{ book.progress }}% complete</span>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Favorites Section -->
+  {% if site.data.books.favorites.size > 0 %}
+  <section class="reading-section reading-shelf">
+    <h2 class="reading-section__title">
+      Favorites
+    </h2>
+
+    <div class="shelf-books">
+      {% for book in site.data.books.favorites %}
+      <article class="shelf-book">
+        <div class="shelf-book__cover-wrapper">
+          <img class="shelf-book__cover book-cover"
+               data-isbn="{{ book.isbn }}"
+               src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
+               alt="{{ book.title }} cover"
+               onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22128%22 height=%22192%22><rect fill=%22%23f0ebe3%22 width=%22128%22 height=%22192%22/><text x=%2264%22 y=%2296%22 text-anchor=%22middle%22 fill=%22%235c4033%22 font-size=%2212%22>No Cover</text></svg>'">
+        </div>
+        <div class="shelf-book__content">
+          <div class="shelf-book__header">
+            <h3 class="shelf-book__title">{{ book.title }}</h3>
+            {% if book.rating %}
+            <div class="shelf-book__rating">
+              {% for i in (1..5) %}
+                {% if i <= book.rating %}
+                  <span class="star star--filled">&#9733;</span>
+                {% else %}
+                  <span class="star star--empty">&#9734;</span>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+          <p class="shelf-book__author">{{ book.author }}</p>
+          {% if book.my_review %}
+          <blockquote class="shelf-book__review">
+            {{ book.my_review }}
+          </blockquote>
+          {% endif %}
+          {% if book.date_read %}
+          <p class="shelf-book__date">Read {{ book.date_read }}</p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- The Queue: To-Read List -->
+  {% if site.data.books.to_read.size > 0 %}
+  <section class="reading-section reading-queue">
+    <h2 class="reading-section__title">
+      Up Next
+    </h2>
+
+    <div class="queue-books">
+      {% for book in site.data.books.to_read %}
+      <div class="queue-book">
+        <div class="queue-book__cover-wrapper">
+          <img class="queue-book__cover book-cover"
+               data-isbn="{{ book.isbn }}"
+               src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
+               alt="{{ book.title }} cover"
+               onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22128%22 height=%22192%22><rect fill=%22%23f0ebe3%22 width=%22128%22 height=%22192%22/><text x=%2264%22 y=%2296%22 text-anchor=%22middle%22 fill=%22%235c4033%22 font-size=%2212%22>No Cover</text></svg>'">
+        </div>
+        <div class="queue-book__info">
+          <h4 class="queue-book__title">{{ book.title }}</h4>
+          <p class="queue-book__author">{{ book.author }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+
+<!-- Book Data for JavaScript -->
+<script>
+  window.bookData = {
+    favorites: [
+      {% for book in site.data.books.favorites %}
+      {
+        isbn: "{{ book.isbn }}",
+        title: "{{ book.title }}",
+        author: "{{ book.author }}",
+        review: "{{ book.my_review | escape }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    tbr: [
+      {% for book in site.data.books.to_read %}
+      {
+        isbn: "{{ book.isbn }}",
+        title: "{{ book.title }}",
+        author: "{{ book.author }}",
+        review: ""
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  };
+</script>
+<script src="{{ site.baseurl }}/assets/js/reading.js"></script>

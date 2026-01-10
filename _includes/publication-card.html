@@ -1,0 +1,51 @@
+{% include base_path %}
+
+<div class="pub-card">
+  {% if post.image %}
+  <div class="pub-image">
+    <img src="{{ post.image | prepend: '/images/' | prepend: base_path }}" alt="{{ post.title }}">
+  </div>
+  {% endif %}
+
+  <div class="pub-content">
+    <h3 class="pub-title">{{ post.title }}</h3>
+
+    {% if post.authors %}
+    <p class="pub-authors">{{ post.authors | replace: "Arthur Liang", "<strong>Arthur Liang</strong>" }}</p>
+    {% endif %}
+
+    {% if post.venue %}
+    <p class="pub-venue"><em>{{ post.venue }}</em>{% if post.year %}, {{ post.year }}{% endif %}</p>
+    {% endif %}
+
+    <div class="pub-links">
+      {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" class="pub-link" target="_blank">Paper</a>
+      {% endif %}
+      {% if post.arxiv %}
+      <a href="{{ post.arxiv }}" class="pub-link" target="_blank">arXiv</a>
+      {% endif %}
+      {% if post.code %}
+      <a href="{{ post.code }}" class="pub-link" target="_blank">Code</a>
+      {% endif %}
+      {% if post.project %}
+      <a href="{{ post.project }}" class="pub-link" target="_blank">Project</a>
+      {% endif %}
+      {% if post.video %}
+      <a href="{{ post.video }}" class="pub-link" target="_blank">Video</a>
+      {% endif %}
+      {% if post.slides %}
+      <a href="{{ post.slides }}" class="pub-link" target="_blank">Slides</a>
+      {% endif %}
+    </div>
+
+    {% if post.description %}
+    <details class="pub-details">
+      <summary>Abstract</summary>
+      <div class="pub-description">
+        {{ post.description | markdownify }}
+      </div>
+    </details>
+    {% endif %}
+  </div>
+</div>

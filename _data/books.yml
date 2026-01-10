@@ -1,0 +1,150 @@
+# Book data for the Reading page
+
+currently_reading:
+  - isbn: "9780008511425"
+    title: "Butter"
+    author: "Asako Yuzuki"
+    progress: 25
+
+favorites:
+  - isbn: "9780618485222"
+    title: "The Namesake"
+    author: "Jhumpa Lahiri"
+
+  - isbn: "9780451524935"
+    title: "1984"
+    author: "George Orwell"
+
+  - isbn: "9780143038092"
+    title: "The Joy Luck Club"
+    author: "Amy Tan"
+
+  - isbn: "9780141439556"
+    title: "Wuthering Heights"
+    author: "Emily Bronte"
+
+  - isbn: "9780811226141"
+    title: "The Last Wolf"
+    author: "Laszlo Krasznahorkai"
+
+read:
+  - isbn: "9780743273565"
+    title: "The Great Gatsby"
+    author: "F. Scott Fitzgerald"
+
+  - isbn: "9780061120084"
+    title: "To Kill a Mockingbird"
+    author: "Harper Lee"
+
+  - isbn: "9780316769488"
+    title: "The Catcher in the Rye"
+    author: "J.D. Salinger"
+
+  - isbn: "9780544336261"
+    title: "The Giver"
+    author: "Lois Lowry"
+
+  - isbn: "9780618485222"
+    title: "The Namesake"
+    author: "Jhumpa Lahiri"
+
+  - isbn: "9780061120060"
+    title: "Their Eyes Were Watching God"
+    author: "Zora Neale Hurston"
+
+  - isbn: "9780812971972"
+    title: "Cloud Atlas"
+    author: "David Mitchell"
+
+  - isbn: "9781451673319"
+    title: "Fahrenheit 451"
+    author: "Ray Bradbury"
+
+  - isbn: "9780451524935"
+    title: "1984"
+    author: "George Orwell"
+
+  - isbn: "9780156787314"
+    title: "A Room of One's Own"
+    author: "Virginia Woolf"
+
+  - isbn: "9780141439471"
+    title: "Frankenstein"
+    author: "Mary Shelley"
+
+  - isbn: "9780374500016"
+    title: "Night"
+    author: "Elie Wiesel"
+
+  - isbn: "9780143038092"
+    title: "The Joy Luck Club"
+    author: "Amy Tan"
+
+  - isbn: "9780141439556"
+    title: "Wuthering Heights"
+    author: "Emily Bronte"
+
+  - isbn: "9780553213690"
+    title: "The Metamorphosis"
+    author: "Franz Kafka"
+
+  - isbn: "9780156907392"
+    title: "To the Lighthouse"
+    author: "Virginia Woolf"
+
+  - isbn: "9780395927205"
+    title: "Interpreter of Maladies"
+    author: "Jhumpa Lahiri"
+
+  - isbn: "9781455586691"
+    title: "Deep Work"
+    author: "Cal Newport"
+
+  - isbn: "9780141439976"
+    title: "The Time Machine"
+    author: "H.G. Wells"
+
+  - isbn: "9780374533557"
+    title: "Thinking, Fast and Slow"
+    author: "Daniel Kahneman"
+
+  - isbn: "9780684853949"
+    title: "The Man Who Mistook His Wife for a Hat"
+    author: "Oliver Sacks"
+
+  - isbn: "9784480020376"
+    title: "Botchan"
+    author: "Natsume Soseki"
+
+  - isbn: "9781400079278"
+    title: "Kafka on the Shore"
+    author: "Haruki Murakami"
+
+  - isbn: "9781846275623"
+    title: "The Vegetarian"
+    author: "Han Kang"
+
+  - isbn: "9780811226141"
+    title: "The Last Wolf"
+    author: "Laszlo Krasznahorkai"
+
+to_read:
+  - isbn: "9780451526342"
+    title: "Animal Farm"
+    author: "George Orwell"
+
+  - isbn: "9780141439570"
+    title: "The Picture of Dorian Gray"
+    author: "Oscar Wilde"
+
+  - isbn: "9780812988406"
+    title: "When Breath Becomes Air"
+    author: "Paul Kalanithi"
+
+  - isbn: "9780143058144"
+    title: "Crime and Punishment"
+    author: "Fyodor Dostoevsky"
+
+  - isbn: "9780141439600"
+    title: "A Tale of Two Cities"
+    author: "Charles Dickens"
