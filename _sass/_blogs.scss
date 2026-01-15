@@ -1,0 +1,137 @@
+/* Blog - Minimal Tight Style */
+
+/* Single post page */
+.page__meta {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.page__taxonomy {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.page__taxonomy-item {
+  color: #666;
+  text-decoration: none;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+/* Tag Filters */
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  max-width: 600px;
+}
+
+.blog-filter {
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #888;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: #333;
+    border-color: #999;
+  }
+
+  &.active {
+    color: #fff;
+    background: #333;
+    border-color: #333;
+  }
+}
+
+/* Blog List - Minimal Tight Style */
+
+.blog-list {
+  max-width: 600px;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.4rem 0;
+}
+
+.blog-item__link {
+  color: #333;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #ccc;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-bottom: 1px solid #333;
+    text-decoration: none !important;
+  }
+}
+
+.blog-item__date {
+  font-size: 0.85rem;
+  color: #999;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Year dividers */
+.blog-year {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #999;
+  margin: 1.5rem 0 0.5rem 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+/* Acknowledgements */
+.blog-acknowledgements {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  font-size: 0.8rem;
+  color: #999;
+
+  a {
+    color: #888;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+
+    &:hover {
+      color: #333;
+      border-bottom-color: #333;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .blog-item {
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.5rem 0;
+  }
+
+  .blog-item__date {
+    font-size: 0.8rem;
+  }
+}
