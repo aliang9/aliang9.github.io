@@ -10,17 +10,15 @@ redirect_from:
 {% include base_path %}
 
 {% comment %} Collect all unique tags {% endcomment %}
-{% assign all_tags = "" | split: "" %}
+{% assign tag_list = "" %}
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% if tag and tag != "" %}
-      {% unless all_tags contains tag %}
-        {% assign all_tags = all_tags | push: tag %}
-      {% endunless %}
+      {% assign tag_list = tag_list | append: tag | append: "|||" %}
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% assign all_tags = all_tags | sort %}
+{% assign all_tags = tag_list | split: "|||" | uniq | sort %}
 
 {% if all_tags.size > 0 %}
 <div class="blog-filters">
