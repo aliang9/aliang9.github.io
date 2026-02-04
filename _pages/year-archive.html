@@ -55,11 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
     filter.addEventListener('click', function() {
       const selected = this.dataset.filter;
 
-      // Update active state
       filters.forEach(f => f.classList.remove('active'));
       this.classList.add('active');
 
-      // Filter items
       items.forEach(item => {
         if (selected === 'all') {
           item.style.display = 'flex';
@@ -69,9 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      // Hide empty year headers
       years.forEach(year => {
-        const yearVal = year.dataset.year;
         let hasVisible = false;
         let sibling = year.nextElementSibling;
         while (sibling && !sibling.classList.contains('blog-year')) {
