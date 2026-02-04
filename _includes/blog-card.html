@@ -9,8 +9,9 @@
 {% assign tag_slugs = "" %}
 {% for tag in post.tags %}
   {% if tag and tag != "" %}
+    {% assign tag_slug = tag | slugify %}
     {% if tag_slugs != "" %}{% assign tag_slugs = tag_slugs | append: "," %}{% endif %}
-    {% assign tag_slugs = tag_slugs | append: tag | slugify %}
+    {% assign tag_slugs = tag_slugs | append: tag_slug %}
   {% endif %}
 {% endfor %}
 
