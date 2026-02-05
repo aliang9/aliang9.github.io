@@ -2,7 +2,7 @@
 title: "Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models"
 authors: "Arthur Liang*, Robert Calef*, Manolis Kellis, Marinka Zitnik"
 venue: "ICLR"
-year: 2025
+year: 2026
 date: 2026-01-01
 image: "magneton_logo.png"
 # paperurl: "https://arxiv.org/pdf/2512.18114"
