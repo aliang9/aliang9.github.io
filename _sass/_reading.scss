@@ -109,6 +109,23 @@ $reading-text-muted: #7a6f63;
   }
 }
 
+.wip-badge {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $reading-accent;
+  background: rgba($reading-gold-light, 0.4);
+  border: 1px solid rgba($reading-accent, 0.3);
+  border-radius: 4px;
+  padding: 0.2em 0.6em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.15em;
+}
+
 // ==========================================================================
 // LUCKY BUTTONS
 // ==========================================================================
