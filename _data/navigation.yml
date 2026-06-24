@@ -1,28 +1,13 @@
-# main links links
+# main links
 main:
   - title: "publications"
     url: /publications/
 
-  # - title: "Talks"
-  #   url: /talks/    
-
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Portfolio"
-    # url: /portfolio/
-        
   - title: "blog"
     url: /year-archive/
-    
-  # - title: "CV"
-  #   url: /cv/
 
   - title: "reading"
     url: /reading/
 
   - title: "resume"
     url: https://aliang9.github.io/files/Liang_Arthur_Resume_2025.pdf
-    
-  # - title: "Guide"
-  #   url: /markdown/
