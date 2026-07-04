@@ -6,8 +6,8 @@ main:
   - title: "blog"
     url: /year-archive/
 
-  - title: "reading"
-    url: /reading/
+  - title: "favorites"
+    url: /favorites/
 
   - title: "resume"
     url: https://aliang9.github.io/files/Liang_Arthur_Resume_2025.pdf

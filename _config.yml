@@ -203,7 +203,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  reading:
+  favorites:
     output: false
 
 

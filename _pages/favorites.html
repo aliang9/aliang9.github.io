@@ -1,15 +1,15 @@
 ---
 layout: archive
-title: "reading"
-permalink: /reading/
+title: "favorites"
+permalink: /favorites/
 author_profile: true
 ---
 
 {% include base_path %}
 
-<p class="reading-intro">an archive of books, videos, and shows i've spent time with — with notes. click an entry to read my commentary.</p>
+<p class="favorites-intro">what i read and watch when the models are training and then pretend to have opinions about. some come with notes!</p>
 
-{% assign entries = site.reading | sort: "date" | reverse %}
+{% assign entries = site.favorites | sort: "date" | reverse %}
 
 {% comment %} Collect all unique types {% endcomment %}
 {% assign type_list = "" %}
@@ -29,16 +29,16 @@ author_profile: true
 </div>
 {% endif %}
 
-<div class="reading-list">
+<div class="favorites-list">
   {% for entry in entries %}
-  <div class="reading-item" data-type="{{ entry.type | slugify }}">
-    <button class="reading-item__head" type="button" aria-expanded="false">
-      <span class="reading-item__title">{{ entry.title }}{% if entry.creator %} <span class="reading-item__creator">— {{ entry.creator }}</span>{% endif %}</span>
-      <span class="reading-item__date">{{ entry.date | date: "%b %Y" }}</span>
+  <div class="favorites-item" data-type="{{ entry.type | slugify }}">
+    <button class="favorites-item__head" type="button" aria-expanded="false">
+      <span class="favorites-item__title">{{ entry.title }}{% if entry.creator %} <span class="favorites-item__creator">— {{ entry.creator }}</span>{% endif %}</span>
+      <span class="favorites-item__date">{{ entry.date | date: "%b %Y" }}</span>
     </button>
-    <div class="reading-item__note" hidden>
+    <div class="favorites-item__note" hidden>
       {{ entry.content | markdownify }}
-      {% if entry.link %}<p class="reading-item__more"><a href="{{ entry.link }}" target="_blank" rel="noopener">link &rarr;</a></p>{% endif %}
+      {% if entry.link %}<p class="favorites-item__more"><a href="{{ entry.link }}" target="_blank" rel="noopener">link &rarr;</a></p>{% endif %}
     </div>
   </div>
   {% endfor %}
@@ -47,11 +47,11 @@ author_profile: true
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Accordion: clicking an entry head toggles its note open/closed.
-  const heads = document.querySelectorAll('.reading-item__head');
+  const heads = document.querySelectorAll('.favorites-item__head');
   heads.forEach(head => {
     head.addEventListener('click', function() {
-      const item = this.closest('.reading-item');
-      const note = item.querySelector('.reading-item__note');
+      const item = this.closest('.favorites-item');
+      const note = item.querySelector('.favorites-item__note');
       const isOpen = item.classList.toggle('is-open');
       this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       note.hidden = !isOpen;
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Type filters, mirroring the blog's tag filter behavior.
   const filters = document.querySelectorAll('.blog-filter');
-  const items = document.querySelectorAll('.reading-item');
+  const items = document.querySelectorAll('.favorites-item');
   filters.forEach(filter => {
     filter.addEventListener('click', function() {
       const selected = this.dataset.filter;

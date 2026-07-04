@@ -1,22 +1,22 @@
-/* Reading archive - Minimal list, matching the blog roll */
+/* Favorites archive - Minimal list, matching the blog roll */
 
-.reading-intro {
+.favorites-intro {
   max-width: 600px;
   color: #888;
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
 }
 
-.reading-list {
+.favorites-list {
   max-width: 600px;
 }
 
-.reading-item {
+.favorites-item {
   border-bottom: 1px solid #f0f0f0;
 }
 
 /* The clickable row: title + creator on the left, date on the right. */
-.reading-item__head {
+.favorites-item__head {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -31,20 +31,20 @@
   color: #333;
 }
 
-.reading-item__title {
+.favorites-item__title {
   border-bottom: 1px dotted #ccc;
   transition: border-color 0.15s ease;
 }
 
-.reading-item__head:hover .reading-item__title {
+.favorites-item__head:hover .favorites-item__title {
   border-bottom: 1px solid #333;
 }
 
-.reading-item__creator {
+.favorites-item__creator {
   color: #999;
 }
 
-.reading-item__date {
+.favorites-item__date {
   font-size: 0.85rem;
   color: #999;
   white-space: nowrap;
@@ -52,7 +52,7 @@
 }
 
 /* The expandable note. */
-.reading-item__note {
+.favorites-item__note {
   padding: 0.25rem 0 0.9rem 0;
   font-size: 0.92rem;
   color: #555;
@@ -67,7 +67,7 @@
   }
 }
 
-.reading-item__more a {
+.favorites-item__more a {
   color: #888;
   text-decoration: none;
   border-bottom: 1px dotted #ccc;
@@ -79,7 +79,7 @@
 }
 
 @media (max-width: 480px) {
-  .reading-item__head {
+  .favorites-item__head {
     flex-direction: column;
     gap: 0.15rem;
   }
