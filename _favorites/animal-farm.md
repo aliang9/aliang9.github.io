@@ -2,7 +2,5 @@
 title: "Animal Farm"
 creator: "George Orwell"
 type: book
-date: 2026-06-19
+status: upnext
 ---
-
-_On my to-read list — not started yet._

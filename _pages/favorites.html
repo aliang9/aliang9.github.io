@@ -30,8 +30,20 @@ author_profile: true
 {% endif %}
 
 <div class="favorites-list">
+  {% assign upnext = site.favorites | where: "status", "upnext" %}
+  {% assign dated = site.favorites | where_exp: "e", "e.status != 'upnext'" | sort: "date" | reverse %}
+
+  {% if upnext.size > 0 %}
+  <div class="favorites-year" data-year="upnext">up next</div>
+  {% for entry in upnext %}
+  <div class="favorites-item favorites-item--static" data-type="{{ entry.type | slugify }}">
+    <span class="favorites-item__title">{{ entry.title }}{% if entry.creator %} <span class="favorites-item__creator">— {{ entry.creator }}</span>{% endif %}</span>
+  </div>
+  {% endfor %}
+  {% endif %}
+
   {% capture written_year %}'None'{% endcapture %}
-  {% for entry in entries %}
+  {% for entry in dated %}
   {% capture year %}{{ entry.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
   <div class="favorites-year" data-year="{{ year }}">{{ year }}</div>
