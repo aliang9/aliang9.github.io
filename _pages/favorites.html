@@ -30,7 +30,13 @@ author_profile: true
 {% endif %}
 
 <div class="favorites-list">
+  {% capture written_year %}'None'{% endcapture %}
   {% for entry in entries %}
+  {% capture year %}{{ entry.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+  <div class="favorites-year" data-year="{{ year }}">{{ year }}</div>
+  {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
   <div class="favorites-item" data-type="{{ entry.type | slugify }}">
     <button class="favorites-item__head" type="button" aria-expanded="false">
       <span class="favorites-item__title">{{ entry.title }}{% if entry.creator %} <span class="favorites-item__creator">— {{ entry.creator }}</span>{% endif %}</span>
@@ -61,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Type filters, mirroring the blog's tag filter behavior.
   const filters = document.querySelectorAll('.blog-filter');
   const items = document.querySelectorAll('.favorites-item');
+  const years = document.querySelectorAll('.favorites-year');
   filters.forEach(filter => {
     filter.addEventListener('click', function() {
       const selected = this.dataset.filter;
@@ -68,6 +75,20 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.add('active');
       items.forEach(item => {
         item.style.display = (selected === 'all' || item.dataset.type === selected) ? 'block' : 'none';
+      });
+
+      // Hide year dividers whose items are all filtered out.
+      years.forEach(year => {
+        let hasVisible = false;
+        let sibling = year.nextElementSibling;
+        while (sibling && !sibling.classList.contains('favorites-year')) {
+          if (sibling.classList.contains('favorites-item') && sibling.style.display !== 'none') {
+            hasVisible = true;
+            break;
+          }
+          sibling = sibling.nextElementSibling;
+        }
+        year.style.display = hasVisible ? 'block' : 'none';
       });
     });
   });
