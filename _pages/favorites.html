@@ -52,7 +52,7 @@ author_profile: true
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Accordion: clicking an entry head toggles its note open/closed.
+  /* Accordion: clicking an entry head toggles its note open/closed. */
   const heads = document.querySelectorAll('.favorites-item__head');
   heads.forEach(head => {
     head.addEventListener('click', function() {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Type filters, mirroring the blog's tag filter behavior.
+  /* Type filters, mirroring the blog's tag filter behavior. */
   const filters = document.querySelectorAll('.blog-filter');
   const items = document.querySelectorAll('.favorites-item');
   const years = document.querySelectorAll('.favorites-year');
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         item.style.display = (selected === 'all' || item.dataset.type === selected) ? 'block' : 'none';
       });
 
-      // Hide year dividers whose items are all filtered out.
+      /* Hide year dividers whose items are all filtered out. */
       years.forEach(year => {
         let hasVisible = false;
         let sibling = year.nextElementSibling;
