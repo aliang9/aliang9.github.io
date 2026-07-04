@@ -15,10 +15,11 @@
   border-bottom: 1px solid #f0f0f0;
 }
 
-/* Up-next (to-read) rows: not clickable, no date, no underline. */
+/* Up-next (to-read) rows: not clickable, no date, no underline, no divider. */
 .favorites-item--static {
   padding: 0.45rem 0;
   color: #333;
+  border-bottom: none;
 }
 
 .favorites-item--static .favorites-item__title {
