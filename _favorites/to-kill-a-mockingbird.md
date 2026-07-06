@@ -2,7 +2,7 @@
 title: "To Kill a Mockingbird"
 creator: "Harper Lee"
 type: book
-date: 2022-03-09
+status: highschool
 ---
 
 Childhood, conscience, and a courtroom in the segregated American South.

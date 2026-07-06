@@ -31,7 +31,8 @@ author_profile: true
 
 <div class="favorites-list">
   {% assign upnext = site.favorites | where: "status", "upnext" %}
-  {% assign dated = site.favorites | where_exp: "e", "e.status != 'upnext'" | sort: "date" | reverse %}
+  {% assign highschool = site.favorites | where: "status", "highschool" | sort: "title" %}
+  {% assign dated = site.favorites | where_exp: "e", "e.status != 'upnext'" | where_exp: "e", "e.status != 'highschool'" | sort: "date" | reverse %}
 
   {% if upnext.size > 0 %}
   <div class="favorites-year" data-year="upnext">up next</div>
@@ -60,6 +61,20 @@ author_profile: true
     </div>
   </div>
   {% endfor %}
+
+  {% if highschool.size > 0 %}
+  <div class="favorites-year" data-year="highschool">high school</div>
+  {% for entry in highschool %}
+  <div class="favorites-item" data-type="{{ entry.type | slugify }}">
+    <button class="favorites-item__head" type="button" aria-expanded="false">
+      <span class="favorites-item__title">{{ entry.title }}{% if entry.creator %} <span class="favorites-item__creator">— {{ entry.creator }}</span>{% endif %}</span>
+    </button>
+    <div class="favorites-item__note" hidden>
+      {{ entry.content | markdownify }}
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
 </div>
 
 <script>

@@ -2,7 +2,7 @@
 title: "Frankenstein"
 creator: "Mary Shelley"
 type: book
-date: 2023-05-30
+status: highschool
 ---
 
 Creation, abandonment, and responsibility — the monster is the one who was wronged.
