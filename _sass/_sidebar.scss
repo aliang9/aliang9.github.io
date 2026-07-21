@@ -188,6 +188,8 @@
   margin-top: 15px;
   padding: 10px;
   list-style-type: none;
+  /* Lowercase the link labels ("Email" -> "email") without editing the template. */
+  text-transform: lowercase;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background: #fff;
