@@ -85,8 +85,10 @@ author_profile: true
   {% if creators.size > 0 %}
   <div class="favorites-year" data-year="creators">creators i keep up with</div>
   {% for creator in creators %}
-  <div class="favorites-item favorites-item--static" data-type="video">
-    <a class="favorites-item__title" href="{{ creator.link }}" target="_blank" rel="noopener">{{ creator.name }}</a>
+  <div class="favorites-item" data-type="video">
+    <a class="favorites-item__head" href="{{ creator.link }}" target="_blank" rel="noopener">
+      <span class="favorites-item__title">{{ creator.name }}</span>
+    </a>
   </div>
   {% endfor %}
   {% endif %}

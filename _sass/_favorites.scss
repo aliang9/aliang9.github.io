@@ -108,13 +108,9 @@
   }
 }
 
-/* Creator rows link straight out to the channel, so keep the dotted underline. */
-.favorites-item--static a.favorites-item__title {
-  color: inherit;
+/* Creator rows are links out to the channel but should look like the book rows, so
+   override the archive's underlined link style (`.archive a`) and keep the row's color. */
+.favorites-list a.favorites-item__head {
+  color: #333;
   text-decoration: none;
-  border-bottom: 1px dotted #ccc;
-
-  &:hover {
-    border-bottom: 1px solid #333;
-  }
 }
