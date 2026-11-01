@@ -1,7 +1,7 @@
 ---
 title: "Incoherent Beliefs & Inconsistent Actions in Large Language Models"
 authors: "Arthur Liang*, Arka Pal*, Teo Kitanovski*, Akilesh Potti, Micah Goldblum"
-venue: "In review"
+venue: "arXiv"
 year: 2025
 date: 2024-12-01
 image: "betting_inconst.png"

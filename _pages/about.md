@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-hi i'm arthur! i'm interested in ai, neuroscience, and biology, particularly methods that help us understand how we think and learn as well as applications to advance technology for remedying and eradicating disease.
+i'm arthur! i'm interested in ai, neuroscience, and biology, particularly methods that help us understand how we think and learn as well as applications to advance technology for remedying and eradicating disease.
 
 i am a budding home cook, avid cafe and restaurant trier, and aspiring martial artist. i'm also learning to blog and slowly finding my content fit. right now, i want to learn more about protein design, programmable biology, writing angel checks, food as medicine, and foreign languages.
 
