@@ -11,7 +11,7 @@ hi i'm arthur! i'm interested in ai, neuroscience, and biology, particularly met
 
 i am a budding home cook, avid cafe and restaurant trier, and aspiring martial artist. i'm also learning to blog and slowly finding my content fit. right now, i want to learn more about protein design, programmable biology, writing angel checks, food as medicine, and foreign languages.
 
-say hi over {% include email-link.html text="email" %} or <a href="https://calendar.app.google/TP8WhF3nywT8V9fc6" target="_blank" rel="noopener">book some time</a>, i'm always looking for good reads, eats, and recipes! currently, i'm working through [dishoom's cookbook](https://www.dishoom.com/store/products/dishoom-cookery-book/)!
+say hi over email {% include email-link.html text="here" %} or <a href="https://calendar.app.google/TP8WhF3nywT8V9fc6" target="_blank" rel="noopener">book some time</a>, i'm always looking for good reads, eats, and recipes! currently, i'm working through [dishoom's cookbook](https://www.dishoom.com/store/products/dishoom-cookery-book/)!
 
 <!-- <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arthurliang/hosted-dinner'});return false;">let me cook you dinner &rarr;</a> -->
 

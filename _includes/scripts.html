@@ -4,8 +4,8 @@
 
 <script>
 /* Email links carry an encoded address (see author.email_obfuscated in _config.yml) and
-   only decode it on click, so scrapers reading the HTML never see it. The link text is
-   swapped for the address so people can copy it if no mail client opens. */
+   only decode it on click, so scrapers reading the HTML never see it. Clicking reveals
+   the address in place of the link text (keeping any icon) rather than opening mail. */
 document.addEventListener('click', function(event) {
   const link = event.target.closest('.js-email');
   if (!link) return;
@@ -16,7 +16,7 @@ document.addEventListener('click', function(event) {
   for (let i = 0; i < hex.length; i += 2) {
     address += String.fromCharCode(parseInt(hex.substr(i, 2), 16) ^ key.charCodeAt((i / 2) % key.length));
   }
-  if (!link.querySelector('i')) link.textContent = address;
-  window.location.href = 'mailto:' + address;
+  const icon = link.querySelector('i');
+  link.replaceChildren(...(icon ? [icon] : []), address);
 });
 </script>
