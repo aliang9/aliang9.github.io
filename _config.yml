@@ -24,7 +24,7 @@ author:
   avatar           : "IMG_3106 (3).jpg"
   name             : "arthur liang"
   bio              : "ai researcher interested in medicine and neuroscience"
-  location         : "cambridge, ma & brooklyn, ny"
+  location         : "london, nyc"
   # Email is stored encoded so the address never appears in the repo or built HTML,
   # where scrapers would harvest it. _includes/scripts.html decodes it on click.
   # To change it, re-encode: XOR each byte with "liang" (cycling), hex, then reverse.
