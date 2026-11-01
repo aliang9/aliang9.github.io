@@ -9,7 +9,9 @@ author_profile: true
 
 <p class="favorites-intro">what i read and watch when the models are training and then pretend to have opinions about. some come with notes!</p>
 
-{% assign entries = site.favorites | sort: "date" | reverse %}
+<p class="favorites-intro">if you're into similar things, reach out {% include email-link.html text="here" %}! always happy to trade recommendations.</p>
+
+{% assign entries = site.data.favorites.items %}
 
 {% comment %} Collect all unique types {% endcomment %}
 {% assign type_list = "" %}
@@ -30,9 +32,11 @@ author_profile: true
 {% endif %}
 
 <div class="favorites-list">
-  {% assign upnext = site.favorites | where: "status", "upnext" %}
-  {% assign highschool = site.favorites | where: "status", "highschool" | sort: "title" %}
-  {% assign dated = site.favorites | where_exp: "e", "e.status != 'upnext'" | where_exp: "e", "e.status != 'highschool'" | sort: "date" | reverse %}
+  {% assign upnext = entries | where: "status", "upnext" %}
+  {% assign highschool = entries | where: "status", "highschool" | sort: "title" %}
+  {% assign unsectioned = entries | where_exp: "e", "e.status != 'upnext'" | where_exp: "e", "e.status != 'highschool'" %}
+  {% assign dated = unsectioned | where_exp: "e", "e.date" | sort: "date" | reverse %}
+  {% assign older = unsectioned | where_exp: "e", "e.date == nil" %}
 
   {% if upnext.size > 0 %}
   <div class="favorites-year" data-year="upnext">up next</div>
@@ -56,11 +60,36 @@ author_profile: true
       <span class="favorites-item__date">{{ entry.date | date: "%b %Y" }}</span>
     </button>
     <div class="favorites-item__note" hidden>
-      {{ entry.content | markdownify }}
+      {{ entry.note | markdownify }}
       {% if entry.link %}<p class="favorites-item__more"><a href="{{ entry.link }}" target="_blank" rel="noopener">link &rarr;</a></p>{% endif %}
     </div>
   </div>
   {% endfor %}
+
+  {% if older.size > 0 %}
+  <div class="favorites-year" data-year="older">older</div>
+  {% for entry in older %}
+  <div class="favorites-item" data-type="{{ entry.type | slugify }}">
+    <button class="favorites-item__head" type="button" aria-expanded="false">
+      <span class="favorites-item__title">{{ entry.title }}{% if entry.creator %} <span class="favorites-item__creator">— {{ entry.creator }}</span>{% endif %}</span>
+    </button>
+    <div class="favorites-item__note" hidden>
+      {{ entry.note | markdownify }}
+      {% if entry.link %}<p class="favorites-item__more"><a href="{{ entry.link }}" target="_blank" rel="noopener">link &rarr;</a></p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% assign creators = site.data.favorites.creators %}
+  {% if creators.size > 0 %}
+  <div class="favorites-year" data-year="creators">creators i keep up with</div>
+  {% for creator in creators %}
+  <div class="favorites-item favorites-item--static" data-type="video">
+    <a class="favorites-item__title" href="{{ creator.link }}" target="_blank" rel="noopener">{{ creator.name }}</a>
+  </div>
+  {% endfor %}
+  {% endif %}
 
   {% if highschool.size > 0 %}
   <div class="favorites-year" data-year="highschool">high school</div>
@@ -70,7 +99,7 @@ author_profile: true
       <span class="favorites-item__title">{{ entry.title }}{% if entry.creator %} <span class="favorites-item__creator">— {{ entry.creator }}</span>{% endif %}</span>
     </button>
     <div class="favorites-item__note" hidden>
-      {{ entry.content | markdownify }}
+      {{ entry.note | markdownify }}
     </div>
   </div>
   {% endfor %}

@@ -143,8 +143,6 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  favorites:
-    output: false
 
 
 # Defaults

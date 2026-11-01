@@ -1,0 +1,298 @@
+# Running list for /favorites/. Add new things to the top of `items`.
+#
+# items: one entry per book / video / blog / paper.
+#   title, creator, type (book | video | blog | paper) are required.
+#   date: when you read/watched it (YYYY-MM-DD; only month + year are shown).
+#   status: upnext (queue, no date) or highschool (older reads, no date).
+#   Leave out both date and status to list it under "older".
+#   link, note: optional. `note` is markdown and shows when the row is clicked.
+#
+# creators: people/channels you follow — no dates, just a link.
+
+creators:
+  - name: "Ludwig"
+    link: https://www.youtube.com/@ludwig
+  - name: "Caedrel"
+    link: https://www.youtube.com/@Caedrel
+  - name: "Jet Lag: The Game"
+    link: https://www.youtube.com/@jetlagthegame
+  - name: "The Iced Coffee Hour"
+    link: https://www.youtube.com/@TheIcedCoffeeHour
+
+items:
+  - title: "A Tale of Two Cities"
+    creator: "Charles Dickens"
+    type: book
+    status: upnext
+
+  - title: "Animal Farm"
+    creator: "George Orwell"
+    type: book
+    status: upnext
+
+  - title: "Crime and Punishment"
+    creator: "Fyodor Dostoevsky"
+    type: book
+    status: upnext
+
+  - title: "When Breath Becomes Air"
+    creator: "Paul Kalanithi"
+    type: book
+    status: upnext
+
+  - title: "Butter"
+    creator: "Asako Yuzuki"
+    type: book
+    date: 2026-06-20
+    status: upnext
+    note: "A gourmet cook and convicted killer at the center of a story about food, desire, and womanhood in Japan."
+
+  - title: "the friendship theory of everything"
+    creator: "Ava (bookbear express)"
+    type: blog
+    date: 2026-10-23
+    link: https://www.avabear.xyz/p/the-friendship-theory-of-everything
+
+  - title: "The Picture of Dorian Gray"
+    creator: "Oscar Wilde"
+    type: book
+    date: 2026-10-16
+
+  - title: "Using Interpretability to Identify a Novel Class of Alzheimer's Biomarkers"
+    creator: "Goodfire"
+    type: blog
+    date: 2026-10-05
+    link: https://www.goodfire.com/research/interpretability-for-alzheimers-detection
+
+  - title: "Never Let Me Go"
+    creator: "Kazuo Ishiguro"
+    type: book
+    date: 2026-10-03
+
+  - title: "Are organoids useful for Alzheimer's research?"
+    creator: "Owl Posting"
+    type: blog
+    date: 2026-09-21
+    link: https://www.owlposting.com/p/are-organoids-useful-for-alzheimers
+
+  - title: "On Earth We're Briefly Gorgeous"
+    creator: "Ocean Vuong"
+    type: book
+    date: 2026-08-03
+
+  - title: "Miniaturizing and modifying natural proteins with Raygun"
+    creator: "Devkota et al."
+    type: paper
+    date: 2026-07-29
+    link: https://www.nature.com/articles/s41586-026-10842-8
+
+  - title: "Writing Doom – Award-Winning Short Film on Superintelligence (2024)"
+    creator: "Foregone Films"
+    type: video
+    date: 2026-06-20
+    link: https://www.youtube.com/watch?v=xfMQ7hzyFW4
+    note: "A short film about a writers' room trying to script a superintelligence."
+
+  - title: "The Man Who Mistook His Wife for a Hat"
+    creator: "Oliver Sacks"
+    type: book
+    date: 2026-05-17
+    note: "Case studies of neurological patients that read like short stories about what makes us ourselves."
+
+  - title: "Minibinder design is just not that hard"
+    creator: "Escalante"
+    type: blog
+    date: 2026-03-01
+    link: https://blog.escalante.bio/minibinder-design-is-just-not-that-hard/
+
+  - title: "The Last Wolf"
+    creator: "László Krasznahorkai"
+    type: book
+    date: 2026-01-20
+    note: "A single unbroken sentence about a washed-up philosopher sent to the Extremadura to write about a wolf. The momentum of the prose is the point."
+
+  - title: "The Adolescence of Technology"
+    creator: "Dario Amodei"
+    type: blog
+    date: 2026-01-01
+    link: https://www.darioamodei.com/essay/the-adolescence-of-technology
+
+  - title: "The Vegetarian"
+    creator: "Han Kang"
+    type: book
+    date: 2026-01-01
+    note: "A woman's refusal to eat meat spirals into a quiet, unsettling story about autonomy and the body."
+
+  - title: "Kafka on the Shore"
+    creator: "Haruki Murakami"
+    type: book
+    date: 2025-12-12
+    note: "Twin narratives, talking cats, and a dream-logic quest that braids myth into the everyday."
+
+  - title: "Scaling down protein language modeling with MSA Pairformer"
+    creator: "Akiyama et al."
+    type: paper
+    date: 2025-09-01
+    link: https://www.biorxiv.org/content/10.1101/2025.08.02.668173v1
+
+  - title: "Botchan"
+    creator: "Natsume Soseki"
+    type: book
+    date: 2025-09-01
+    note: "A hot-headed young teacher butts against small-town hypocrisy in this comic Japanese classic."
+
+  - title: "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning"
+    creator: "Anthropic"
+    type: paper
+    date: 2025-06-01
+    link: https://transformer-circuits.pub/2023/monosemantic-features
+
+  - title: "The Urgency of Interpretability"
+    creator: "Dario Amodei"
+    type: blog
+    date: 2025-04-01
+    link: https://www.darioamodei.com/post/the-urgency-of-interpretability
+
+  - title: "Machines of Loving Grace"
+    creator: "Dario Amodei"
+    type: blog
+    date: 2024-10-01
+    link: https://www.darioamodei.com/essay/machines-of-loving-grace
+
+  - title: "Evolutionary-scale prediction of atomic-level protein structure with a language model (ESM-2)"
+    creator: "Lin et al."
+    type: paper
+    date: 2024-10-01
+    link: https://www.science.org/doi/10.1126/science.ade2574
+
+  - title: "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+    creator: "Abramson et al."
+    type: paper
+    date: 2024-06-01
+    link: https://www.nature.com/articles/s41586-024-07487-w
+
+  - title: "Fast protein backbone generation with SE(3) flow matching"
+    creator: "Yim et al."
+    type: paper
+    date: 2024-01-01
+    link: https://arxiv.org/abs/2310.05297
+
+  - title: "The Time Machine"
+    creator: "H.G. Wells"
+    type: book
+    date: 2022-10-31
+    note: "The original time-travel tale, and a bleak parable about class stretched across deep time."
+
+  - title: "Thinking, Fast and Slow"
+    creator: "Daniel Kahneman"
+    type: book
+    date: 2022-07-01
+    note: "The two-system model of the mind and the cognitive biases that come with it."
+
+  - title: "Deep Work"
+    creator: "Cal Newport"
+    type: book
+    date: 2022-07-01
+    note: "An argument for focused, distraction-free effort as the rare skill that compounds."
+
+  - title: "1984"
+    creator: "George Orwell"
+    type: book
+    status: highschool
+    note: "Doublethink, the memory hole, the boot stamping forever."
+
+  - title: "A Room of One's Own"
+    creator: "Virginia Woolf"
+    type: book
+    status: highschool
+    note: "On the material conditions women need to write, and the cost of their absence from the canon."
+
+  - title: "Cloud Atlas"
+    creator: "David Mitchell"
+    type: book
+    status: highschool
+    note: "Six nested stories across centuries, echoing the idea that lives ripple into one another."
+
+  - title: "Fahrenheit 451"
+    creator: "Ray Bradbury"
+    type: book
+    status: highschool
+    note: "A fireman who burns books begins to question a society that fears them."
+
+  - title: "Frankenstein"
+    creator: "Mary Shelley"
+    type: book
+    status: highschool
+    note: "Creation, abandonment, and responsibility — the monster is the one who was wronged."
+
+  - title: "Interpreter of Maladies"
+    creator: "Jhumpa Lahiri"
+    type: book
+    status: highschool
+    note: "Short stories of Indian and Indian-American lives, quiet distances, and small revelations."
+
+  - title: "Night"
+    creator: "Elie Wiesel"
+    type: book
+    status: highschool
+    note: "A spare, devastating memoir of the Holocaust and the loss of faith."
+
+  - title: "The Catcher in the Rye"
+    creator: "J.D. Salinger"
+    type: book
+    status: highschool
+    note: "Holden Caulfield's restless weekend and the ache of growing up."
+
+  - title: "The Giver"
+    creator: "Lois Lowry"
+    type: book
+    status: highschool
+    note: "A boy inherits the memories his utopia chose to forget, and learns what was traded away."
+
+  - title: "The Great Gatsby"
+    creator: "F. Scott Fitzgerald"
+    type: book
+    status: highschool
+    note: "The green light, the reinvented man, and the rot under the Jazz Age dream."
+
+  - title: "The Joy Luck Club"
+    creator: "Amy Tan"
+    type: book
+    status: highschool
+    note: "Four mothers, four daughters, and everything that gets lost and kept across the generations."
+
+  - title: "The Metamorphosis"
+    creator: "Franz Kafka"
+    type: book
+    status: highschool
+    note: "Gregor wakes as an insect; the family's reaction is the real horror."
+
+  - title: "The Namesake"
+    creator: "Jhumpa Lahiri"
+    type: book
+    status: highschool
+    note: "Gogol's name as the thread tying together belonging, family, and the immigrant in-between."
+
+  - title: "Their Eyes Were Watching God"
+    creator: "Zora Neale Hurston"
+    type: book
+    status: highschool
+    note: "Janie's search for love and selfhood, told in vivid Southern Black vernacular."
+
+  - title: "To Kill a Mockingbird"
+    creator: "Harper Lee"
+    type: book
+    status: highschool
+    note: "Childhood, conscience, and a courtroom in the segregated American South."
+
+  - title: "To the Lighthouse"
+    creator: "Virginia Woolf"
+    type: book
+    status: highschool
+    note: "Time, memory, and perception rendered in shifting interior monologue around a family by the sea."
+
+  - title: "Wuthering Heights"
+    creator: "Emily Brontë"
+    type: book
+    status: highschool
+    note: "Not a love story so much as a haunting about obsession and the moors."
