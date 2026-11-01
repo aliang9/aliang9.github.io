@@ -1,3 +1,22 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
 {% include analytics.html %}
+
+<script>
+/* Email links carry an encoded address (see author.email_obfuscated in _config.yml) and
+   only decode it on click, so scrapers reading the HTML never see it. The link text is
+   swapped for the address so people can copy it if no mail client opens. */
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('.js-email');
+  if (!link) return;
+  event.preventDefault();
+  const key = 'liang';
+  const hex = link.dataset.email.split('').reverse().join('');
+  let address = '';
+  for (let i = 0; i < hex.length; i += 2) {
+    address += String.fromCharCode(parseInt(hex.substr(i, 2), 16) ^ key.charCodeAt((i / 2) % key.length));
+  }
+  if (!link.querySelector('i')) link.textContent = address;
+  window.location.href = 'mailto:' + address;
+});
+</script>

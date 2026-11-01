@@ -25,7 +25,10 @@ author:
   name             : "arthur liang"
   bio              : "ai researcher interested in medicine and neuroscience"
   location         : "cambridge, ma & brooklyn, ny"
-  email            : "artliang@mit.edu"
+  # Email is stored encoded so the address never appears in the repo or built HTML,
+  # where scrapers would harvest it. _includes/scripts.html decodes it on click.
+  # To change it, re-encode: XOR each byte with "liang" (cycling), hex, then reverse.
+  email_obfuscated : "40304004d000d0a0901280b090f08050e1216051b1d0"
 
   # Academic websites
   googlescholar    : "https://scholar.google.com/citations?user=XDxtBX8AAAAJ&hl=en"

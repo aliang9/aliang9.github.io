@@ -7,11 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-i'm arthur and i love learning and building. i'm interested in ai, neuroscience, and biology, particularly methods that help us understand how we think and learn as well as applications to advance technology for remedying and eradicating disease.
+hi i'm arthur! i'm interested in ai, neuroscience, and biology, particularly methods that help us understand how we think and learn as well as applications to advance technology for remedying and eradicating disease.
 
-i love trying new cafes and restaurants, reading, cooking, and practicing taekwondo. i'm also learning to blog and slowly finding my content fit. right now, i want to learn more about protein design, writing angel checks, symmetry, dynamical systems, food as medicine, and foreign languages.
+i am a budding home cook, avid cafe and restaurant trier, and aspiring martial artist. i'm also learning to blog and slowly finding my content fit. right now, i want to learn more about protein design, programmable biology, writing angel checks, food as medicine, and foreign languages.
 
-say hi at artliang [at] mit [dot] edu, i'm always looking for good reads, eats, and recipes! currently, i'm working through [dishoom's cookbook](https://www.dishoom.com/store/products/dishoom-cookery-book/)!
+say hi over {% include email-link.html text="email" %} or <a href="https://calendar.app.google/TP8WhF3nywT8V9fc6" target="_blank" rel="noopener">book some time</a>, i'm always looking for good reads, eats, and recipes! currently, i'm working through [dishoom's cookbook](https://www.dishoom.com/store/products/dishoom-cookery-book/)!
+
+<!-- <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/arthurliang/hosted-dinner'});return false;">let me cook you dinner &rarr;</a> -->
 
 -- last updated march 2026
 
