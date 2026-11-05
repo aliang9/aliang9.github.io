@@ -152,6 +152,8 @@ defaults:
       path: ""
       type: posts
     values:
+      # Blog hidden for now (see _data/navigation.yml); delete this line to republish posts.
+      published: false
       layout: single
       author_profile: true
       read_time: true

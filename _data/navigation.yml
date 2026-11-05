@@ -3,8 +3,10 @@ main:
   - title: "publications"
     url: /publications/
 
-  - title: "blog"
-    url: /year-archive/
+  # Blog hidden for now; restore this link and the `published: false` lines in
+  # _config.yml, _pages/year-archive.html and _pages/tag-archive.html to bring it back.
+  # - title: "blog"
+  #   url: /year-archive/
 
   - title: "favorites"
     url: /favorites/
